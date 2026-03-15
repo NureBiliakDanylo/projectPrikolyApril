@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Днем Рождения!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="confetti-container"></div>
+
+        <div id="balloons-container">
+            <div id="hint-text">Лопни их</div>
+            <div class="balloon" id="balloon1" onclick="popBalloon(this)"></div>
+            <div class="balloon" id="balloon2" onclick="popBalloon(this)"></div>
+            <div class="balloon" id="balloon3" onclick="popBalloon(this)"></div>
+        </div>
+        <div id="surprise-section" class="hidden">
+            <div id="main-image-container">
+                <img id="birthday-image" src="birthday_image.jpg" alt="С Днем Рождения!">
+            </div>
+            
+            <div id="gifts-container">
+                <div class="gift" onclick="openGift(1)">🎁</div>
+                <div class="gift" onclick="openGift(2)">🎁</div>
+                <div class="gift" onclick="openGift(3)">🎁</div>
+            </div>
+        </div>
+
+        <div id="gift-modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <p id="gift-message"></p>
+            </div>
+        </div>
+
+        <audio id="birthday-audio" src="celebration_audio.mp3" preload="auto"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
