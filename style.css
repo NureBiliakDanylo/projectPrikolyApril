@@ -132,6 +132,29 @@ body {
     margin-bottom: 30px;
 }
 
+#music-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+#music-toggle:active {
+    transform: scale(0.9);
+}
+
 #gifts-container {
     display: flex;
     gap: 30px;
